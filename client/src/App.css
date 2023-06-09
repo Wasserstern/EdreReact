@@ -24,7 +24,9 @@
   width: 81%;
   height: 80px;
   border: solid red 1px;
+  z-index: 3;
 }
+
 .ButtonAbsolute{
   height: 30px;
   flex-basis: 30px;
@@ -33,6 +35,9 @@
   flex-grow:1;
   flex-shrink: 1;
   border: solid white 3px;
+}
+.ButtonAbsolute:hover{
+  border: solid 5px cyan;
 }
 .Filler{
   width: 100%;

@@ -7,5 +7,6 @@ export default{
             `
             ,            
         }
-    ]
+    ],
+    maxPage : 80
 }
