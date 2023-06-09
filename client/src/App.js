@@ -11,6 +11,15 @@ function App() {
   const [currentPage, setCurrentPage] = useState(0);
   const [cookies, setCookie] = useCookies(['unlockedChapters'])
 
+  let allChapters = story.chapters.map(chapter => {
+    const re = /.{1,2600}/g;
+    console.log(story.chapters[0].text.match(re))
+    return chapter.text.match(re);
+  })
+  
+  console.log(allChapters)
+
+
 
   let showMap = false;
   

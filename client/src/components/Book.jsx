@@ -6,7 +6,6 @@ import Page from "./Page";
 function Book({story, currentPage, showMap}){
 
     let chapter = story.chapters;
-    console.log(showMap)
 
     return(
         
