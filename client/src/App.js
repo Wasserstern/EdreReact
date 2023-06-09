@@ -31,9 +31,15 @@ function App() {
   return (
     <div className="App">
       <div className="Background"></div>
+      <div className="ButtonContainer">
+        <div id="ButtonTurnLeft" className="ButtonAbsolute"></div>
+        <div className="Filler"></div>
+        <div id="ButtonTurnRight" className="ButtonAbsolute"></div>
+      </div>
+
       <Book story={story}></Book>
     </div>
   );
-}
+} 
 
 export default App;

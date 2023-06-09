@@ -14,3 +14,36 @@
   height: 95%;
   z-index: -10;
 }
+
+
+
+.ButtonContainer{
+  display: flex;
+  align-items: center;
+  position:absolute;
+  width: 81%;
+  height: 80px;
+  border: solid red 1px;
+}
+.ButtonAbsolute{
+  height: 30px;
+  flex-basis: 30px;
+  max-width: 30px;
+  min-width: 10px;
+  flex-grow:1;
+  flex-shrink: 1;
+  border: solid white 3px;
+}
+.Filler{
+  width: 100%;
+  min-width: 84%;
+  border: solid red 1px;
+  height: 80%;
+  margin: 20px;
+}
+
+#ButtonTurnLeft{
+}
+#ButtonTurnRight{
+  margin-left: auto;
+}
