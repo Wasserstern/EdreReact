@@ -4,7 +4,9 @@ import './Page.css';
 
 function Page({text}){
     return(
-        <div className="Page">{text}</div>
+        <div className="Page">
+            <p className="TextBox">{text}</p>
+        </div>
     )
 }
 
