@@ -9,6 +9,7 @@ function App() {
 
   const [story, setStory] = useState(storyTest1)
   const [currentPage, setCurrentPage] = useState(0);
+  const [currentChapter, setCurrentChapter] = useState(0);
   const [cookies, setCookie] = useCookies(['unlockedChapters'])
 
   let allChapters = story.chapters.map(chapter => {
@@ -64,7 +65,7 @@ function App() {
         <div onClick={turnPageRight} id="ButtonTurnRight" className="ButtonAbsolute"></div>
       </div>
 
-      <Book story={story} currentPage={currentPage} showMap={showMap}></Book>
+      <Book story={story} currentPage={currentPage} currentChapter={currentChapter} showMap={showMap}></Book>
     </div>
   );
 } 

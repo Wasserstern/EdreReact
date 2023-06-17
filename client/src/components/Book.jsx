@@ -1,17 +1,20 @@
 
-import {useState, useEffect} from "react"
+import {useState, useEffect, useRef} from "react"
 import './Book.css';
 import Page from "./Page";
+import OverflowCheckPage from "./OverflowCheckPage";
 
-function Book({story, currentPage, showMap}){
+function Book({story, currentPage, currentChapter, showMap}){
 
-    let chapter = story.chapters;
+
 
     return(
-        
+
         <div className="Book">
-            <Page text={chapter[0].text} pageNumber={currentPage} showMap={showMap}></Page>
-            <Page text={chapter[0].text} pageNumber={currentPage +1} showMap={showMap}></Page>      
+            <div className="Container">
+                <Page text={story.chapters[currentChapter].text} pageNumber={currentPage} showMap={showMap}></Page>
+                <Page text={story.chapters[currentChapter].text} pageNumber={currentPage +1} showMap={showMap}></Page>  
+            </div>
         </div>
 
     )
